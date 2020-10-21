@@ -1,4 +1,4 @@
-# this is over test project 
+# this is test project 
 which is insurance agent web application used by insurance agent to manage there client
 for setup you have to first create a virtual environment in python 
  pip install virtualenv 

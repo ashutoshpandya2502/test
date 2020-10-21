@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>add client </h1>
+    <div id="add_client">
+        <form class="form-horizontal" name="addClient" action="{% url 'add_client' agent_id %}" method="post">
+        {% csrf_token %}
+        <div class="control-group">
+            <label class="control-label" for="firstname">first name </label>
+            <div class="controls">
+                <input type="text" id="firstname" name="firstname"  placeholder="firstname">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="lastname">lastname</label>
+            <div class="controls">
+                <input type="lastname" name="lastname" id="lastname" placeholder="lastname">
+            </div>
+        </div>
+         <div class="control-group">
+            <label class="control-label" for="address">address</label>
+            <div class="controls">
+                <input type="address" name="address" id="address" placeholder="address">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">add client</button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

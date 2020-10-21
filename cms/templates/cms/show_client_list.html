@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>list of client</h1>
+	<ul>
+	{% for client in client_object_list %}
+		<li>{{ client.first_name}} - {{ client.last_name}} </li>
+		<li></li>
+	{% endfor %}
+	</ul>
+	<a href="{% url 'home' %}">Home</a>
+	<a href="{% url  'show_client_edit' agent_id %}">add client</a>
+</body>
+</html>

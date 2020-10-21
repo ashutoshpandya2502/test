@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Agent Login{% endblock %}</title>
+</head>
+<body>
+  <header>
+    <h1>Login as agent</h1>
+    
+      <a href="{% url 'home' %}">home</a>
+  </header>
+  <hr>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <hr>
+  <footer>
+   <p> insurance business</p>
+  </footer>
+</body>
+</html>
